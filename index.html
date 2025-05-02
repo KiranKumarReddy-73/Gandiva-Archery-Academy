@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth's Professional Meme Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!-- <div class="close-icon" id="close-icon">
+        <i class="fas fa-times"></i>
+        </div> -->
+        <ul class="nav-list">
+            <li><a href="#home" onclick="scrollToSection(event, 'home')">Home</a></li>
+            <li><a href="#events" onclick="scrollToSection(event, 'events')">Our Branches</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#about" onclick="scrollToSection(event, 'about')">About Us</a></li>
+            <li><a href="#" target="_blank" class="join">Join Now</a></li>
+        </ul>
+        <script>
+            function scrollToSection(event, sectionId) {
+                event.preventDefault();
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        </script>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="videos/WhatsApp Video 2025-05-01 at 15.50.13.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1 id="typing-effect"></h1>
+            <h2>Gandiva Archery Academy</h2>
+            <script>
+                const text = "JOIN THE LEGACY OF GANDIVA ARCHERY ACADEMY";
+                let index = 0;
+                function typeEffect() {
+                    const typingElement = document.getElementById('typing-effect');
+                    if (index < text.length) {
+                        typingElement.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(typeEffect, 150);
+                    }
+                }
+
+                document.addEventListener('DOMContentLoaded', typeEffect);
+            </script>
+            <a href="https://www.instagram.com/siddhartha_memes/" target="_blank" class="cta-button">Join Now!</a>
+        </div>
+        <!-- Social Media Links -->
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Gandiva Archery Academy? The Real Question is – Why Not?</h2>
+
+        <div class="feature-cards">
+            <div class="feature-card">
+                <img src="images/Picsart_25-05-01_09-37-29-651.png" alt="Instant Updates">
+                <h3>Training & Eligibility</h3>
+                <p>Training available for everyone above 6 years of age</p>
+                <p>Beginners to advanced learners welcome</p>
+                <p>Coaching by international-level professionals</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="images/Picsart_25-05-01_09-37-50-270.png" alt="Fun Memes">
+                <h3>Tournaments & Events</h3>
+                <p>Academy students are taken to tournaments every year</p>
+                <p>Regular participation helps build competitive spirit</p>
+                <p>Opportunities at district, state, and national levels</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="images/Picsart_25-05-01_09-38-07-633.png" alt="Skills Growth">
+                <h3>Fitness & Discipline</h3>
+                <p>Special focus on physical fitness as part of training</p>
+                <p>Students trained in discipline and consistency</p>
+                <p>Core values emphasized throughout training</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Branches</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Tournaments Listed</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-number">6,000+</div>
+                <div class="stat-label">Students</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Our Branches</h2>
+        <p>Join our Academy & Empower Your Archery Skills</p>
+
+        <div class="scroll-container">
+            <button class="scroll-button left">&lt;</button>
+
+            <div class="events-container">
+                <div class="event-card">
+                    <img src="images/WhatsApp Image 2025-04-28 at 11.18.06.jpeg" alt="IOT DAY" class="event-image">
+                    <div class="event-details">
+                        <h4>Tirupati Branch </h4>
+        
+                        <a href="https://maps.app.goo.gl/iEU2WE9cXmrAGyV1A" class="register-open-button">Get Directions</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="images/WhatsApp Image 2025-04-28 at 11.18.06.jpeg" alt="Siddharth Quest 2K25" class="event-image">
+                    <div class="event-details">
+                        <h4>Mangalam</h4>
+                        <a href="https://maps.app.goo.gl/zHtxV1F56k3gF4SAA" class="register-closed-button">Get Directions</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <img src="images/WhatsApp Image 2025-04-28 at 11.18.06.jpeg" alt="Siddharth HackFest 2K25" class="event-image">
+                    <div class="event-details">
+                        <h4>Sri Kalahastri</h4>
+                        <a href="https://maps.app.goo.gl/9iZY21duYZuy96Hw5" class="register-closed-button">Get Directions</a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="scroll-button right">&gt;</button>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <h2>FAQS</h2>
+
+        <div class="faq-container">
+            <details class="faq-item">
+                <summary class="faq-question"> Who can join the academy?</summary>
+                <div class="faq-answer">Anyone aged 6 and above is welcome to join! We train beginners and experienced archers alike.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">What are the training timings?</summary>
+                <div class="faq-answer">Timings vary based on batches. Please contact us directly or visit the academy for the latest schedule.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">Is equipment provided?</summary>
+                <div class="faq-answer">Yes, all essential archery equipment is provided during training sessions.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">Do students get to participate in tournaments?</summary>
+                <div class="faq-answer">Absolutely! We encourage and train our students for state and national level tournaments every year.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">Do you focus only on archery?</summary>
+                <div class="faq-answer">While archery is our core focus, we also emphasize physical fitness and discipline as key elements of the training.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">Who is the coach?</summary>
+                <div class="faq-answer">Our sessions are led by Coach Dhananjay Tellaguti, in collaboration with the Andhra Pradesh Archery Academy.</div>
+            </details>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="about" class="history">
+        <h2>History Of Our Page</h2>
+        <p> Gandiva Archery Academy
+            <br>
+            Since 2015
+<p>
+
+</p>
+Founded in 2015 in association with the Andhra Pradesh Archery Academy, Gandiva Archery Academy Tirupati began its journey with just a handful of passionate learners. Under the expert guidance of Coach Dhananjay Tellaguti, the academy steadily grew in strength and reputation.
+What started as a small initiative has now expanded to reach archery enthusiasts across the entire Tirupati district, becoming a recognized name for discipline, physical fitness, and tournament-level training.
+        <div class="contact-buttons">
+            <a href="#" target="_blank" class="contact-button">Contact Us</a>
+            <a href="#" target="_blank" class="contact-button">Chat With Our Team</a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+    <p>Copyright@Gandiva Archert Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

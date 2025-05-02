@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#events">Our Branches</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="https://www.instagram.com/siddhartha_memes/" target="_blank" class="join">Join Now</a></li>
+        </ul>
+        <script>
+            function scrollToSection(event, sectionId) {
+                event.preventDefault();
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        </script>
+    </nav>
+    <section class="gallery">
+        <h2>Image Gallery</h2>
+        <p>Welcome to our curated collection of moments captured during various events and celebrations. Click on any image to view it in full size.</p>
+    <div class="gallery-event-cards-container">
+        <div class="gallery-event-card">
+            <img src="images/WhatsApp Image 2025-04-28 at 11.17.33.jpeg" alt="Siddharth Quest 2K25" class="event-image">
+            <div class="event-details">
+                <h3>Presenting</h3>
+                <h4>15th National Level Technical Symposium</h4>
+                <p><i class="fa fa-map-marker"></i> Siddharth Institute, Puttur</p>
+                <p><i class="fa fa-calendar"></i> 4th April 2025</p>
+                <a href="SiddarthQuest2k25.html" class="register-button">Visit OUr Gallery</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Copyright@Siddharth Memes. All rights reserved.</p>
+        <p>Built with passion by <a href="https://www.linkedin.com/in/hemanthkumar-k-s?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="footer-link-director"> HEMANTHKUMAR K S </a> & <a href="https://www.linkedin.com/in/kiran-kumar-reddy-4a4455274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank" class="footer-link-director"> KIRAN KUMAR REDDY M </a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
