@@ -383,7 +383,7 @@ nav ul li a:hover {
     background-color: #0056b3;
 }
 .register-closed-button {
-    background-color: #666;
+    background-color: blue;
     display: inline-block;
     text-decoration: none;
     padding: 10px 15px;
@@ -393,7 +393,7 @@ nav ul li a:hover {
 }
 
 .register-closed-button:hover {
-    background-color: #d43f3f;
+    background-color: #0056b3;
 }
 
 /* Scroll Buttons */
